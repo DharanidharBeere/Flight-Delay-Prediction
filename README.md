@@ -1,57 +1,94 @@
-# ✈️ Flight Delay Prediction
+# ✈️ Flight Delay Prediction Using Machine Learning
 
 ## 📌 Project Overview
-This project predicts whether a flight will be **delayed or on time** using Machine Learning.  
-The goal is to help passengers and airlines make better decisions by identifying possible delays in advance.
+This project predicts whether a flight will be **delayed or on time** using Machine Learning techniques.  
+It uses historical flight data to help improve decision-making for passengers and airlines.
 
 ---
 
-## 🎯 Objective
-- Predict flight delays (Yes/No)
-- Reduce missed delays
-- Balance between correct predictions and false warnings
+## 🎯 Research Objective
+To evaluate how accurately **gradient-boosted models (XGBoost)** can predict flight delays and improve performance using model tuning techniques.
+
+---
+
+## 📊 Dataset
+- Source: U.S. Bureau of Transportation Statistics (BTS)
+- Alternative: Kaggle Flight Delay Dataset  
+- Type: Tabular Data
+
+### Features include:
+- Airline
+- Departure & Arrival Time
+- Distance
+- Airport information
+- Delay-related variables
 
 ---
 
 ## 🧠 Model Used
-- XGBoost Classifier (Optimized)
-- Threshold tuning applied to improve performance
+- XGBoost Classifier (Gradient Boosted Model)
+- Compared before and after tuning
 
 ---
 
-## ⚙️ How It Works
-1. Input flight data (airline, time, distance, etc.)
-2. Model calculates probability of delay
-3. Apply threshold (0.7) to classify:
-   - Above 0.7 → Delayed
-   - Below 0.7 → On Time
+## ⚙️ Methodology
+
+1. Data preprocessing and cleaning  
+2. Feature selection and encoding  
+3. Model training using XGBoost  
+4. Model evaluation using confusion matrix  
+5. Threshold tuning to improve predictions  
 
 ---
 
-## 📊 Results
-- Improved detection of delayed flights
-- Reduced missed delays significantly
-- Some increase in false delay warnings (trade-off)
+## 🔍 How Prediction Works
+- The model outputs a **probability of delay**
+- A threshold is applied:
+  - If probability > 0.7 → Delayed
+  - Else → On Time
 
 ---
 
-## 📈 Evaluation
-- Confusion Matrix used for performance analysis
-- Compared results before and after tuning
+## 📈 Results
+
+### Before Tuning:
+- Very good at predicting on-time flights  
+- Poor at detecting delayed flights (many missed delays)
+
+### After Tuning:
+- Significant improvement in detecting delays  
+- Reduced missed delays  
+- Slight increase in false delay warnings (trade-off)
 
 ---
 
-## 📂 Files in Repository
-- `Final_Running_Modal_{FD}.ipynb` → Main project notebook  
-- `README.md` → Project documentation  
+## 📊 Evaluation Metrics
+- Confusion Matrix  
+- Precision, Recall, F1-score  
+
+---
+
+## ⚖️ Key Insight
+The model shows a trade-off:
+- Lower threshold → more delay predictions (more false alarms)
+- Higher threshold → fewer false alarms but may miss delays  
+
+Optimal threshold chosen: **0.7**
+
+---
+
+## 📂 Project Files
+- `Final_Running_Modal_{FD}.ipynb` → Main notebook  
+- `README.md` → Documentation  
 
 ---
 
 ## 🚀 Conclusion
-The model successfully improves delay prediction using threshold tuning.  
-It provides a better balance between detecting delays and avoiding false alerts.
+The model successfully improves flight delay prediction using XGBoost and threshold tuning.  
+It achieves a better balance between detecting delays and reducing false warnings.
 
 ---
 
 ## 👨‍💻 Author
-Dharanidhar Beere
+**Dharanidhar Beere**  
+MSc Data Science (Advanced Research)
