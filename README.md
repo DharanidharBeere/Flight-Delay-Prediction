@@ -78,7 +78,7 @@ Optimal threshold chosen: **0.7**
 ---
 
 ## 📂 Project Files
-- `Final_Running_Modal_{FD}.ipynb` → Main notebook  
+- `Flight_Delay_Prediction_using_GB_Ensemble_models.ipynb` → Main notebook  
 - `README.md` → Documentation  
 
 ---
