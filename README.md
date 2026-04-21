@@ -1,17 +1,17 @@
-# ✈️ Flight Delay Prediction Using Machine Learning
+# Flight Delay Prediction Using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 This project predicts whether a flight will be **delayed or on time** using Machine Learning techniques.  
 It uses historical flight data to help improve decision-making for passengers and airlines.
 
 ---
 
-## 🎯 Research Objective
+## Research Objective
 To evaluate how accurately **gradient-boosted models (XGBoost)** can predict flight delays and improve performance using model tuning techniques.
 
 ---
 
-## 📊 Dataset
+## Dataset
 - Source: U.S. Bureau of Transportation Statistics (BTS)
 - Alternative: Kaggle Flight Delay Dataset  
 - Type: Tabular Data
@@ -25,13 +25,13 @@ To evaluate how accurately **gradient-boosted models (XGBoost)** can predict fli
 
 ---
 
-## 🧠 Model Used
+## Model Used
 - XGBoost Classifier (Gradient Boosted Model)
 - Compared before and after tuning
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 1. Data preprocessing and cleaning  
 2. Feature selection and encoding  
@@ -41,7 +41,7 @@ To evaluate how accurately **gradient-boosted models (XGBoost)** can predict fli
 
 ---
 
-## 🔍 How Prediction Works
+## How Prediction Works
 - The model outputs a **probability of delay**
 - A threshold is applied:
   - If probability > 0.7 → Delayed
@@ -49,7 +49,7 @@ To evaluate how accurately **gradient-boosted models (XGBoost)** can predict fli
 
 ---
 
-## 📈 Results
+##  Results
 
 ### Before Tuning:
 - Very good at predicting on-time flights  
@@ -62,13 +62,13 @@ To evaluate how accurately **gradient-boosted models (XGBoost)** can predict fli
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 - Confusion Matrix  
 - Precision, Recall, F1-score  
 
 ---
 
-## ⚖️ Key Insight
+##  Key Insight
 The model shows a trade-off:
 - Lower threshold → more delay predictions (more false alarms)
 - Higher threshold → fewer false alarms but may miss delays  
@@ -77,13 +77,13 @@ Optimal threshold chosen: **0.7**
 
 ---
 
-## 📂 Project Files
+## Project Files
 - `Flight_Delay_Prediction_using_GB_Ensemble_models.ipynb` → Main notebook  
 - `README.md` → Documentation  
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 The model successfully improves flight delay prediction using XGBoost and threshold tuning.  
 It achieves a better balance between detecting delays and reducing false warnings.
 
